@@ -1,0 +1,320 @@
+/* Modernized CSS */
+:root {
+    --primary-color: #377dff;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --background-light: #f8faff;
+    --text-dark: #1f1f1f;
+    --purple-color: #8e44ad;
+}
+
+/* Global Styles */
+body {
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: var(--text-dark);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #333 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.hero-section .row {
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section .col-lg-6 {
+    margin-bottom: 2rem;
+}
+
+#about {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+#about .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to bottom right, #f8faff, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+    /* Reduced from 100px */
+    padding-bottom: 40px;
+    /* Optional: reduce vertical space */
+}
+
+
+.profile-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #f0f4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+    /* More depth */
+    position: relative;
+    margin: 0 auto;
+}
+
+.profile-circle::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #d1e2ff;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+}
+
+.profile-circle::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #e6efff;
+    border-radius: 50%;
+    bottom: -15px;
+    left: -15px;
+}
+
+.profile-initials {
+    z-index: 2;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #256df1;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Social Links */
+.social-links a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    color: #ffc107 !important;
+}
+
+/* About Section Custom Styles */
+#about {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.about-image {
+    font-size: 100px;
+    color: #0d6efd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.stat-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h4 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0d6efd;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Contact Section Buttons */
+#contact .btn-outline-dark {
+    border-radius: 50px;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+#contact .btn-outline-dark:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+@media (min-width: 992px) {
+    .hero-section .row {
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.badge.bg-skill {
+    background-color: #e6f0ff;
+    color: #1a56db;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.badge.bg-skill:hover {
+    background-color: #d2e4ff;
+    transform: scale(1.05);
+}
+
+
+/* Base card styling (Bootstrap-based) */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    /* Light background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    /* Center it if needed */
+}
+
+.about-image i {
+    color: #007bff;
+    /* Blue icon, or choose your brand color */
+    font-size: 32px;
+}
+
+
+
+
+:root {
+    --purple-color: #6f42c1;
+    /* or any purple shade you prefer */
+}
+
+.bg-purple {
+    background-color: var(--purple-color) !important;
+}
+
+.text-purple {
+    color: var(--purple-color) !important;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #e0d4f7;
+    /* light purple */
+    color: #6f42c1;
+    /* Bootstrap's purple */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* center inside card */
+}
