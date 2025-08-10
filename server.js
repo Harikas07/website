@@ -62,11 +62,14 @@ app.post('/submitContact', async (req, res) => {
     }
 });
 
+const path = require('path');
+
 app.get('/resume', (req, res) => {
-    console.log("resume")
+    console.log("resume request");
     const filePath = path.join(__dirname, 'public', 'attached_assets', 'Resume_Updated.pdf');
-    res.download(filePath, 'Resume_Updated.pdf'); // Force download
+    res.download(filePath, 'Resume_Updated.pdf'); // Forces download
 });
+
 
 
 
