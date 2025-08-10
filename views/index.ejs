@@ -114,14 +114,21 @@
                     <h2 class="h3 text-primary">
                         I'm a <span id="typing-text"></span><span class="cursor">|</span>
                     </h2>
-                    <span id="raw-title" th:text="${title}" style="display: none;"></span>
+                    <!-- <span id="raw-title" th:text="${title}" style="display: none;"></span> -->
+                    <span id="raw-title" style="display: none;">
+                        <%= title %>
+                    </span>
 
-                    <p class="lead text-dark mb-4" th:text="${objective}">
+                    <p class="lead text-dark mb-4">
+                        <%= objective %>
+                    </p>
+
+                    <!-- <p class="lead text-dark mb-4" th:text="${objective}">
                         Graduate in Information Science specializing in Machine Learning, focused on leveraging skills
                         in
                         data analysis, statistical modeling, and machine learning to extract insights and recommend
                         data-driven solutions for organizational growth.
-                    </p>
+                    </p> -->
                     <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
                         <a href="/attached_assets/Resume_Updated.pdf" download class="btn btn-primary btn-lg">
                             <i class="fas fa-download me-2"></i>Download Resume
