@@ -62,6 +62,11 @@ app.post('/submitContact', async (req, res) => {
     }
 });
 
+app.get('/resume', (req, res) => {
+    const filePath = path.join(__dirname, 'public', 'attached_assets', 'Resume_Updated.pdf');
+    res.download(filePath, 'Resume_Updated.pdf'); // Force download
+});
+
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
