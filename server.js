@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Dynamic typing roles
 const typingRoles = [
-    "Specializing in Data Analysis, Data Science, Machine Learning, and Visualization"
+    "Data Scientist | Machine Learning Engineer | Data Analyst "
 ];
 const objective = `Graduate in Information Science specializing in Machine Learning, focused on leveraging skills
 in data analysis, statistical modeling, and machine learning to extract insights and recommend

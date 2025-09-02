@@ -89,6 +89,14 @@ h6 {
     /* Optional: reduce vertical space */
 }
 
+.profile-circle img.profile-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;  /* keeps aspect ratio, fills circle */
+    z-index: 2;
+}
+
 
 .profile-circle {
     width: 300px;
